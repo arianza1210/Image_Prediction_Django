@@ -1,0 +1,16 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="sentFile" />
+    <input type="submit" name="submit" value="Upload" />
+</form>
+{{name}}
+
+</body>
+</html>
